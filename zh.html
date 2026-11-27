@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rightrans — 首页</title>
+<meta name="description" content="Rightrans Inc. 是一家纽约的美国公司，提供美国销售代理、中国采购和老旧件替代服务。">
+<link rel="alternate" hreflang="en" href="index.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F7F6F2}
+a{color:#9A3412}a:hover{color:#7C2D12}
+@keyframes rtUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.rt-hero{animation:rtUp .7s cubic-bezier(.2,.7,.2,1) both}
+.rt-d1{animation-delay:.05s}.rt-d2{animation-delay:.2s}.rt-d3{animation-delay:.35s}.rt-d4{animation-delay:.5s}
+.rt-card,.rt-btn{transition:transform .2s ease, box-shadow .2s ease}
+.rt-card:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(15,27,45,.10)}
+.rt-btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(15,27,45,.18)}
+@supports (animation-timeline: view()){.rt-reveal{animation:rtUp linear both;animation-timeline:view();animation-range:entry 0% entry 35%}}
+@media (prefers-reduced-motion: reduce){.rt-hero,.rt-reveal{animation:none}.rt-card,.rt-btn{transition:none}.rt-card:hover,.rt-btn:hover{transform:none;box-shadow:none}}
+</style>
+<style>html{scroll-behavior:smooth}#contact{scroll-margin-top:84px}[hidden]{display:none!important}</style>
+</head>
+<body>
+<div style="font-family: 'Noto Sans SC', 'PingFang SC', system-ui, sans-serif; color: #111827; background: #F7F6F2; width: 100%">
+<header style="position: sticky; top: 0; z-index: 40; border-bottom: 1px solid #E5E2DA; background: #F7F6F2">
+<nav aria-label="主导航" style="max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<div style="display: flex; align-items: center; gap: 12px">
+<button type="button" aria-label="打开菜单" aria-expanded="false" data-action="open-menu" style="width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center; background: transparent; border: 1px solid #D6D2C8; border-radius: 8px; cursor: pointer; padding: 0; color: #111827">
+<svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="17" x2="20" y2="17"></line></svg>
+</button>
+<a href="#top" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 24px; color: #111827; text-decoration: none; letter-spacing: -0.5px">Rightrans</a>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-size: 15px">
+<a href="#top" style="text-decoration: none; color: #111827; font-weight: 600; border-bottom: 2px solid #C2410C; padding-bottom: 2px;">首页</a>
+<div data-dd style="position: relative">
+<button type="button" aria-haspopup="true" aria-expanded="false" data-action="toggle-services" style="display: inline-flex; align-items: center; gap: 6px; background: transparent; border: 0; padding: 10px 0; min-height: 44px; font: inherit; font-size: 15px; cursor: pointer; color: #374151;">服务内容<svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+<div class="rt-dd" hidden>
+<div style="position: absolute; top: 100%; left: -16px; padding-top: 6px; z-index: 45">
+<div style="width: 300px; background: #FFFFFF; border: 1px solid #E5E2DA; border-radius: 10px; box-shadow: 0 12px 32px rgba(15, 27, 45, 0.12); padding: 8px; display: flex; flex-direction: column; gap: 2px"><a href="zh-agency.html" style="display: flex; flex-direction: column; gap: 2px; padding: 12px 14px; border-radius: 8px; text-decoration: none; background: #FFFFFF"><span style="color: #111827; font-weight: 600; font-size: 15px">美国销售代理</span><span style="color: #4B5563; font-size: 13px">帮国内厂商把产品卖进美国</span></a><a href="zh-sourcing.html" style="display: flex; flex-direction: column; gap: 2px; padding: 12px 14px; border-radius: 8px; text-decoration: none; background: #FFFFFF"><span style="color: #111827; font-weight: 600; font-size: 15px">中国采购</span><span style="color: #4B5563; font-size: 13px">帮美国企业在国内找货源</span></a><a href="zh-parts.html" style="display: flex; flex-direction: column; gap: 2px; padding: 12px 14px; border-radius: 8px; text-decoration: none; background: #FFFFFF"><span style="color: #111827; font-weight: 600; font-size: 15px">老旧件替代</span><span style="color: #4B5563; font-size: 13px">帮客户找停产、难买零件的替代品</span></a></div>
+</div>
+</div>
+</div>
+<a href="#contact" style="text-decoration: none; color: #374151">联系我们</a>
+<a href="index.html" style="color: #374151; text-decoration: none; border: 1px solid #D6D2C8; border-radius: 6px; padding: 8px 12px">English</a>
+</div>
+</nav>
+</header>
+
+<div id="rt-menu" hidden>
+<div style="position: fixed; inset: 0; z-index: 50; display: flex">
+<aside aria-label="网站菜单" style="width: 340px; max-width: 86vw; height: 100vh; box-sizing: border-box; background: #0F1B2D; color: #E8ECF2; padding: 24px; display: flex; flex-direction: column; gap: 32px; overflow-y: auto">
+<div style="display: flex; align-items: center; justify-content: space-between">
+<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 24px; letter-spacing: -0.5px">Rightrans</span>
+<button type="button" aria-label="关闭菜单" data-action="close-menu" style="width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center; background: transparent; border: 1px solid #3B4B63; border-radius: 8px; cursor: pointer; padding: 0; color: #E8ECF2">
+<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"></line><line x1="18" y1="6" x2="6" y2="18"></line></svg>
+</button>
+</div>
+<nav aria-label="网站菜单" style="display: flex; flex-direction: column">
+<a href="#top" data-action="close-menu" style="color: #FDBA74; text-decoration: none; font-size: 18px; padding: 14px 0; border-bottom: 1px solid #23324A">首页</a>
+<div style="padding: 14px 0; border-bottom: 1px solid #23324A; display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 18px; color: #E8ECF2">服务内容</span>
+<a href="zh-agency.html" data-action="close-menu" style="color: #C9D2DF; text-decoration: none; font-size: 16px; padding: 10px 0 10px 16px; border-left: 2px solid #3B4B63">美国销售代理</a><a href="zh-sourcing.html" data-action="close-menu" style="color: #C9D2DF; text-decoration: none; font-size: 16px; padding: 10px 0 10px 16px; border-left: 2px solid #3B4B63">中国采购</a><a href="zh-parts.html" data-action="close-menu" style="color: #C9D2DF; text-decoration: none; font-size: 16px; padding: 10px 0 10px 16px; border-left: 2px solid #3B4B63">老旧件替代</a>
+</div>
+<a href="#contact" data-action="close-menu" style="color: #E8ECF2; text-decoration: none; font-size: 18px; padding: 14px 0">联系我们</a>
+</nav>
+<div style="margin-top: auto; display: flex; flex-direction: column; gap: 6px; font-size: 15px; color: #B4BECD">
+<a href="mailto:info@rightrans.com" style="color: #FDBA74">info@rightrans.com</a>
+<span>美国纽约</span>
+</div>
+</aside>
+<button type="button" aria-label="关闭菜单" data-action="close-menu" style="flex: 1; border: 0; padding: 0; background: rgba(15, 27, 45, 0.45); cursor: pointer"></button>
+</div>
+</div><section id="top" style="max-width: 1200px; margin: 0 auto; padding: 96px 24px 88px; display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start">
+<div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+<div class="rt-hero rt-d1"><p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 1.5px; color: #C2410C">中美贸易服务</p></div>
+<h1 class="rt-hero rt-d2" style="margin: 0; font-weight: 700; font-size: 52px; line-height: 1.25">连接中国工厂与美国市场的<br>纽约伙伴。</h1>
+<p class="rt-hero rt-d3" style="margin: 0; font-size: 19px; line-height: 1.8; color: #4B5563; max-width: 660px">Rightrans Inc. 是一家位于纽约的美国公司，双向开展业务：帮国内厂商把产品卖进美国，帮美国企业在国内采购，并为停产、难买的零件寻找替代品。</p>
+<div class="rt-hero rt-d4" style="display: flex; flex-wrap: wrap; gap: 12px; padding-top: 8px"><a href="#services" class="rt-btn" style="background: #C2410C; color: #FFFFFF; text-decoration: none; padding: 14px 24px; border-radius: 6px; font-weight: 600; font-size: 16px; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center">查看服务内容</a><a href="#contact" class="rt-btn" style="color: #111827; text-decoration: none; padding: 14px 24px; border-radius: 6px; font-weight: 500; font-size: 16px; border: 1px solid #111827; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center">联系我们</a></div>
+</div>
+<aside class="rt-hero rt-d3" aria-label="公司简介" style="flex: 1 1 320px; min-width: 0; background: #FFFFFF; border: 1px solid #E5E2DA; border-radius: 10px; padding: 28px; display: flex; flex-direction: column; gap: 18px">
+<p style="margin: 0; font-size: 14px; font-weight: 500; letter-spacing: 2px; color: #4B5563">关于 RIGHTRANS</p>
+<div style="display: flex; flex-direction: column; gap: 4px; border-bottom: 1px solid #EEEBE4; padding-bottom: 16px"><span style="font-weight: 700; font-size: 17px">纽约注册的美国公司</span><span style="color: #4B5563; font-size: 15px; line-height: 1.6">Rightrans Inc. 在纽约州注册成立，总部位于纽约。</span></div>
+<div style="display: flex; flex-direction: column; gap: 4px; border-bottom: 1px solid #EEEBE4; padding-bottom: 16px"><span style="font-weight: 700; font-size: 17px">中英双语</span><span style="color: #4B5563; font-size: 15px; line-height: 1.6">一个对接人，同时听懂工厂和美国客户。</span></div>
+<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-weight: 700; font-size: 17px">三项服务，一个伙伴</span><span style="color: #4B5563; font-size: 15px; line-height: 1.6">美国代理、中国采购、老旧件替代。</span></div>
+</aside>
+</section><section class="rt-reveal" style="max-width: 1200px; margin: 0 auto; padding: 0px 24px 88px; display: flex; flex-direction: column; gap: 28px"><div id="services"></div><div style="display: flex; flex-direction: column; gap: 12px; max-width: 760px"><p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 1.5px; color: #C2410C">服务内容</p><h2 style="margin: 0; font-weight: 700; font-size: 36px; line-height: 1.25">三种方式，连接中国与美国</h2></div><div style="display: flex; flex-wrap: wrap; gap: 20px"><a href="zh-agency.html" class="rt-card" style="flex: 1 1 340px; min-width: 0; background: #FFFFFF; border: 1px solid #E5E2DA; border-radius: 10px; padding: 32px; text-decoration: none; display: flex; flex-direction: column; gap: 12px"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 15px; font-weight: 600; color: #4B5563">01</span><span style="font-size: 22px; font-weight: 600; color: #111827; line-height: 1.35">美国销售代理</span><span style="font-size: 14px; color: #C2410C; font-weight: 600">帮国内厂商把产品卖进美国</span><span style="font-size: 16px; line-height: 1.8; color: #4B5563">作为国内工厂在美国的代理，对接美国分销商、零售商和企业采购，并在发货前确认产品符合美国规定。</span><span style="margin-top: auto; padding-top: 8px; font-size: 15px; font-weight: 600; color: #111827">了解详情 →</span></a><a href="zh-sourcing.html" class="rt-card" style="flex: 1 1 340px; min-width: 0; background: #FFFFFF; border: 1px solid #E5E2DA; border-radius: 10px; padding: 32px; text-decoration: none; display: flex; flex-direction: column; gap: 12px"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 15px; font-weight: 600; color: #4B5563">02</span><span style="font-size: 22px; font-weight: 600; color: #111827; line-height: 1.35">中国采购</span><span style="font-size: 14px; color: #C2410C; font-weight: 600">帮美国企业在国内找货源</span><span style="font-size: 16px; line-height: 1.8; color: #4B5563">帮美国企业在国内寻找、筛选供应商，比较报价、确认样品，并跟进订单直到发货。</span><span style="margin-top: auto; padding-top: 8px; font-size: 15px; font-weight: 600; color: #111827">了解详情 →</span></a><a href="zh-parts.html" class="rt-card" style="flex: 1 1 340px; min-width: 0; background: #FFFFFF; border: 1px solid #E5E2DA; border-radius: 10px; padding: 32px; text-decoration: none; display: flex; flex-direction: column; gap: 12px"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 15px; font-weight: 600; color: #4B5563">03</span><span style="font-size: 22px; font-weight: 600; color: #111827; line-height: 1.35">老旧件替代</span><span style="font-size: 14px; color: #C2410C; font-weight: 600">帮客户找停产、难买零件的替代品</span><span style="font-size: 16px; line-height: 1.8; color: #4B5563">设备零件停产或交期太长时，我们在国内寻找能生产兼容替代件的厂家。</span><span style="margin-top: auto; padding-top: 8px; font-size: 15px; font-weight: 600; color: #111827">了解详情 →</span></a></div></section><div style="background: #FFFFFF; border-top: 1px solid #E5E2DA; border-bottom: 1px solid #E5E2DA; padding-top: 88px; margin-bottom: 88px"><section class="rt-reveal" style="max-width: 1200px; margin: 0 auto; padding: 0px 24px 88px; display: flex; flex-direction: column; gap: 28px"><div style="display: flex; flex-direction: column; gap: 12px; max-width: 760px"><p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 1.5px; color: #C2410C">为什么选我们</p><h2 style="margin: 0; font-weight: 700; font-size: 36px; line-height: 1.25">每一位客户都可以期待的</h2></div><div style="display: flex; flex-wrap: wrap; gap: 20px"><article class="rt-card" style="flex: 1 1 340px; min-width: 0; background: #FFFFFF; border: 1px solid #E5E2DA; border-radius: 10px; padding: 32px; display: flex; flex-direction: column; gap: 12px"><h3 style="margin: 0; font-size: 20px; font-weight: 600; line-height: 1.4">人在美国的美国公司</h3><p style="margin: 0; font-size: 16px; line-height: 1.8; color: #4B5563">以纽约本地公司的身份与买家和供应商见面，按美国法律签订协议。</p></article><article class="rt-card" style="flex: 1 1 340px; min-width: 0; background: #FFFFFF; border: 1px solid #E5E2DA; border-radius: 10px; padding: 32px; display: flex; flex-direction: column; gap: 12px"><h3 style="margin: 0; font-size: 20px; font-weight: 600; line-height: 1.4">一个双语对接人</h3><p style="margin: 0; font-size: 16px; line-height: 1.8; color: #4B5563">同一个人既和工厂沟通，也和美国客户沟通，信息不会在翻译中走样。</p></article><article class="rt-card" style="flex: 1 1 340px; min-width: 0; background: #FFFFFF; border: 1px solid #E5E2DA; border-radius: 10px; padding: 32px; display: flex; flex-direction: column; gap: 12px"><h3 style="margin: 0; font-size: 20px; font-weight: 600; line-height: 1.4">懂工厂</h3><p style="margin: 0; font-size: 16px; line-height: 1.8; color: #4B5563">了解国内工厂怎么报价、生产和发货，不替工厂做做不到的承诺。</p></article><article class="rt-card" style="flex: 1 1 340px; min-width: 0; background: #FFFFFF; border: 1px solid #E5E2DA; border-radius: 10px; padding: 32px; display: flex; flex-direction: column; gap: 12px"><h3 style="margin: 0; font-size: 20px; font-weight: 600; line-height: 1.4">合规优先</h3><p style="margin: 0; font-size: 16px; line-height: 1.8; color: #4B5563">从第一天起就把认证、标签和海关规定考虑进去，不在清关环节走捷径。</p></article><article class="rt-card" style="flex: 1 1 340px; min-width: 0; background: #FFFFFF; border: 1px solid #E5E2DA; border-radius: 10px; padding: 32px; display: flex; flex-direction: column; gap: 12px"><h3 style="margin: 0; font-size: 20px; font-weight: 600; line-height: 1.4">坦诚评估</h3><p style="margin: 0; font-size: 16px; line-height: 1.8; color: #4B5563">产品或需求不合适时，在您花钱之前就说清楚。</p></article><article class="rt-card" style="flex: 1 1 340px; min-width: 0; background: #FFFFFF; border: 1px solid #E5E2DA; border-radius: 10px; padding: 32px; display: flex; flex-direction: column; gap: 12px"><h3 style="margin: 0; font-size: 20px; font-weight: 600; line-height: 1.4">每笔交易都经您确认</h3><p style="margin: 0; font-size: 16px; line-height: 1.8; color: #4B5563">未经您同意，我们不会替您承诺价格、条款或订单。</p></article></div></section></div><section id="contact" aria-labelledby="contact-h" style="background: #0F1B2D; color: #E8ECF2">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start">
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<h2 id="contact-h" style="margin: 0; font-weight: 700; font-size: 42px; line-height: 1.2">告诉我们您的需求。</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.8; color: #B4BECD">工厂或买家都可以，我们会在两个工作日内回复。</p>
+<div style="display: flex; flex-direction: column; gap: 8px; padding-top: 8px; font-size: 17px"><a href="mailto:info@rightrans.com" style="color: #FDBA74">info@rightrans.com</a><span style="color: #B4BECD">微信：[你的微信号]</span><span style="color: #B4BECD">美国纽约</span></div>
+</div>
+<form aria-label="告诉我们您的需求。" style="flex: 1 1 480px; min-width: 0; background: #FFFFFF; color: #111827; border-radius: 10px; padding: 32px; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; flex-wrap: wrap; gap: 16px">
+<label style="flex: 1 1 200px; min-width: 0; display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600">姓名<input type="text" name="name" style="font: inherit; font-weight: 400; font-size: 16px; padding: 12px; border: 1px solid #9CA3AF; border-radius: 6px; min-height: 44px; box-sizing: border-box"></label>
+<label style="flex: 1 1 200px; min-width: 0; display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600">公司名称<input type="text" name="company" style="font: inherit; font-weight: 400; font-size: 16px; padding: 12px; border: 1px solid #9CA3AF; border-radius: 6px; min-height: 44px; box-sizing: border-box"></label>
+</div>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600">邮箱<input type="email" name="email" style="font: inherit; font-weight: 400; font-size: 16px; padding: 12px; border: 1px solid #9CA3AF; border-radius: 6px; min-height: 44px; box-sizing: border-box"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600">我是…<select name="role" style="font: inherit; font-weight: 400; font-size: 16px; padding: 12px; border: 1px solid #9CA3AF; border-radius: 6px; min-height: 44px; box-sizing: border-box; background: #FFFFFF"><option>国内厂商，想开拓美国市场</option><option>美国企业，想在中国采购</option><option>需要停产零件的替代件</option></select></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600">产品、零件型号或留言<textarea name="message" rows="4" style="font: inherit; font-weight: 400; font-size: 16px; padding: 12px; border: 1px solid #9CA3AF; border-radius: 6px; min-height: 44px; box-sizing: border-box; resize: vertical"></textarea></label>
+<button type="submit" class="rt-btn" style="background: #C2410C; color: #FFFFFF; border: 0; padding: 14px 24px; border-radius: 6px; font: inherit; font-weight: 600; font-size: 16px; min-height: 48px; cursor: pointer; align-self: flex-start">提交</button>
+</form>
+</div>
+</section><footer style="max-width: 1200px; margin: 0 auto; padding: 32px 24px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; font-size: 14px; color: #4B5563"><span>© 2026 Rightrans Inc. · 美国纽约</span><span>Rightrans 不是货代、报关行或进口商（Importer of Record）。</span></footer>
+</div>
+<script>
+(function(){
+  var menu=document.getElementById('rt-menu');
+  function setMenu(open){ if(!menu) return; menu.hidden=!open; document.querySelectorAll('[data-action="open-menu"]').forEach(function(b){b.setAttribute('aria-expanded', open?'true':'false');}); document.body.style.overflow=open?'hidden':''; }
+  document.addEventListener('click',function(e){
+    var t=e.target.closest('[data-action]'); if(!t) return;
+    var a=t.getAttribute('data-action');
+    if(a==='open-menu') setMenu(true);
+    if(a==='close-menu') setMenu(false);
+    if(a==='toggle-services'){ var dd=t.parentElement.querySelector('.rt-dd'); if(dd){ dd.hidden=!dd.hidden; t.setAttribute('aria-expanded', dd.hidden?'false':'true'); } }
+  });
+  document.querySelectorAll('[data-dd]').forEach(function(w){
+    var dd=w.querySelector('.rt-dd'), b=w.querySelector('button');
+    w.addEventListener('mouseenter',function(){dd.hidden=false;b.setAttribute('aria-expanded','true');});
+    w.addEventListener('mouseleave',function(){dd.hidden=true;b.setAttribute('aria-expanded','false');});
+  });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape'){ setMenu(false); document.querySelectorAll('.rt-dd').forEach(function(d){d.hidden=true;}); } });
+})();
+</script>
+</body>
+</html>
