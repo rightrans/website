@@ -6,26 +6,26 @@ rightrans.com 的网站源文件。**目前是草稿，尚未上线**（GitHub P
 
 | 文件 | 页面 |
 |---|---|
-| `index.html` / `zh.html` | 首页（英文 / 中文）：公司介绍、三项服务、为什么选我们、联系表单 |
-| `agency.html` / `zh-agency.html` | 服务一：美国销售代理（帮国内厂商把产品卖进美国） |
-| `sourcing.html` / `zh-sourcing.html` | 服务二：中国采购（帮美国企业在国内找货源） |
+| `index.html` / `zh.html` | 首页（英文 / 中文）：公司介绍、三项服务、我们的承诺、创始人、联系表单 |
+| `agency.html` / `zh-agency.html` | 服务一：海外销售代理（帮工厂把产品卖进国际市场） |
+| `sourcing.html` / `zh-sourcing.html` | 服务二：全球采购（帮采购商找到可靠货源） |
 | `parts.html` / `zh-parts.html` | 服务三：老旧件替代（停产、难买零件的替代品） |
-| `design/` | 设计稿源文件（Claude 设计画布格式，`.dc.html`），网站不直接使用 |
+| `privacy.html` / `zh-privacy.html` | 隐私政策与法律声明 |
+| `404.html`、`robots.txt`、`sitemap.xml` | 找不到页面、搜索引擎设置 |
+| `fonts/`、`images/` | 自托管字体（不依赖 Google Fonts，国内也能正常加载）、照片、网站图标、分享图 |
+| `design/` | 设计稿源文件（Claude 设计画布格式，`.dc.html`），`_config.yml` 已设置为不发布 |
 
-纯静态 HTML，无需构建：每个页面一个文件，样式写在页面内，菜单和下拉用页面底部的一小段 JavaScript。字体来自 Google Fonts。
+纯静态 HTML，无需构建。样式写在页面内，菜单、下拉和表单用页面底部的一小段 JavaScript。
 
-## 已实现的功能
+## 联系表单
 
-- 顶部导航栏固定在页面顶部；"服务内容"鼠标悬停展开三个子页面
-- 左上角三条横线打开侧边菜单（不含语言切换；语言切换只在顶部）
-- 所有"联系我们"链接都跳到首页的联系表单（`#contact`）；"首页"回到首页顶部
-- 动画：开场标题淡入、卡片和按钮悬停上浮、滚动时内容浮现（系统开启"减少动态效果"时自动关闭）
-- 中英文页面一一对应，可互相切换
+`index.html` 和 `zh.html` 底部脚本里有一行 `var FORM_ENDPOINT='';`。
+- 留空时：点“发送”会打开访客的邮件应用，自动填好内容，发到 info@rightrans.com。
+- 注册 Formspree 后，把表单地址（形如 `https://formspree.io/f/xxxx`）填进去，中英文两页都要填。之后表单直接在页面上提交，并显示“已收到”。
 
 ## 上线前待办
 
-1. **重写文字**：现有文字偏笼统，需要补充公司的真实信息（代理的产品、创始人背景、目标客户、老旧件针对的设备类型）后重写全站文字。
-2. **填写占位内容**：搜索 `[填写`、`[YOUR`，包括价格、佣金条款和微信号。
-3. **联系表单**：目前只是界面，提交后不会发送。需要接一个表单服务（例如 Formspree），或改成 `mailto:` 链接。
-4. **确认承诺**：页面写了"两个工作日内回复"，确认能做到再保留。
-5. **开启 GitHub Pages** 并把 rightrans.com 指向它。修改域名 DNS 时，只改网站相关的记录（A / CNAME），**不要动 MX、SPF、DKIM、DMARC 等邮件记录**，否则公司邮箱会失效。
+1. 填写或删除剩余占位内容：搜索 `[填写`、`[Fill in`。
+2. 接 Formspree（见上）。
+3. 开启 GitHub Pages，在仓库根目录加 `CNAME` 文件（内容 `rightrans.com`），并把 rightrans.com 指向 GitHub Pages。修改 DNS 时只改网站相关的记录（A / CNAME），**不要动 MX、SPF、DKIM、DMARC 等邮件记录**，否则公司邮箱会失效。
+4. 上线后在 Google Search Console 提交 `sitemap.xml`。
