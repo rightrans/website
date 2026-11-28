@@ -1,0 +1,4 @@
+# GitHub Pages build settings: publish the website only, not the design source or notes.
+exclude:
+  - design
+  - README.md

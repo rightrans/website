@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rightrans.com/sitemap.xml
