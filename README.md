@@ -19,7 +19,7 @@ rightrans.com 的网站源文件。**目前是草稿，尚未上线**（GitHub P
 
 ## 联系表单
 
-`index.html` 和 `zh.html` 底部脚本里有一行 `var FORM_ENDPOINT='';`。
+`index.html` 和 `zh.html` 底部脚本里的 `FORM_ENDPOINT` 已填 Formspree 表单地址 `https://formspree.io/f/xeagwlqo`（账号 info@rightrans.com，提交转发到 info@）。
 - 留空时：点“发送”会打开访客的邮件应用，自动填好内容，发到 info@rightrans.com。
 - 注册 Formspree 后，把表单地址（形如 `https://formspree.io/f/xxxx`）填进去，中英文两页都要填。之后表单直接在页面上提交，并显示“已收到”。
 

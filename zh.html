@@ -166,7 +166,7 @@ a{color:#9A3412}a:hover{color:#7C2D12}
 (function(){
   /* Form service: paste the Formspree endpoint here, e.g. 'https://formspree.io/f/abcdwxyz'.
      While it is empty, the form opens the visitor's email app with the message filled in. */
-  var FORM_ENDPOINT='';
+  var FORM_ENDPOINT='https://formspree.io/f/xeagwlqo';
   var T={"subj": "网站询问", "lab": ["姓名", "公司名称", "邮箱", "电话或微信", "服务", "需求说明"], "ok": "已收到您的信息，我们会在两个工作日内回复。", "err": "发送失败，请直接发邮件到 info@rightrans.com。", "mail": "已为您打开邮件应用并填好内容，请点发送。如果没有打开，请直接发邮件到 info@rightrans.com。"};
   var form=document.getElementById('rt-form'); if(!form) return;
   var status=form.querySelector('.rt-form-status');
@@ -181,6 +181,7 @@ a{color:#9A3412}a:hover{color:#7C2D12}
       location.href='mailto:info@rightrans.com?subject='+encodeURIComponent(T.subj+' - '+(fd.get('service')||''))+'&body='+encodeURIComponent(body);
       status.textContent=T.mail; return;
     }
+    fd.append('_subject',T.subj+' - '+(fd.get('service')||''));
     var btn=form.querySelector('button[type=submit]'); btn.disabled=true;
     fetch(FORM_ENDPOINT,{method:'POST',body:fd,headers:{'Accept':'application/json'}})
       .then(function(r){ if(!r.ok) throw 0; form.reset(); status.textContent=T.ok; })
