@@ -166,7 +166,7 @@ a{color:#9A3412}a:hover{color:#7C2D12}
 (function(){
   /* Form service: paste the Formspree endpoint here, e.g. 'https://formspree.io/f/abcdwxyz'.
      While it is empty, the form opens the visitor's email app with the message filled in. */
-  var FORM_ENDPOINT='';
+  var FORM_ENDPOINT='https://formspree.io/f/xeagwlqo';
   var T={"subj": "Website inquiry", "lab": ["Name", "Company", "Email", "Phone", "Service", "Details"], "ok": "Thank you. We received your message and will reply within two business days.", "err": "Sorry, the message could not be sent. Please email us at info@rightrans.com.", "mail": "Your email app should open with your message ready to send. If it did not, please email us at info@rightrans.com."};
   var form=document.getElementById('rt-form'); if(!form) return;
   var status=form.querySelector('.rt-form-status');
@@ -181,6 +181,7 @@ a{color:#9A3412}a:hover{color:#7C2D12}
       location.href='mailto:info@rightrans.com?subject='+encodeURIComponent(T.subj+' - '+(fd.get('service')||''))+'&body='+encodeURIComponent(body);
       status.textContent=T.mail; return;
     }
+    fd.append('_subject',T.subj+' - '+(fd.get('service')||''));
     var btn=form.querySelector('button[type=submit]'); btn.disabled=true;
     fetch(FORM_ENDPOINT,{method:'POST',body:fd,headers:{'Accept':'application/json'}})
       .then(function(r){ if(!r.ok) throw 0; form.reset(); status.textContent=T.ok; })
